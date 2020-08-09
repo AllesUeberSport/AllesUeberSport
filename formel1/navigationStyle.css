@@ -1,0 +1,257 @@
+
+@keyframes navAnimation{
+    0%{
+        top: -100px;
+        box-shadow: 0px 0px 0px 0px rgb(219,9,9);
+        
+    }
+    100%{
+        top: 10px;
+        box-shadow: 0px 0px 6px 1px rgb(219,9,9);
+    }
+}
+
+nav{
+    border: 1px red;
+    color: white;
+    text-align: center;
+    position :sticky;
+    top:0px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-bottom: 20px;
+    width: 100%;
+    min-width: 300px;
+    z-index: 20;
+}
+
+.mainNaviList{
+    position: static;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    clear: both;
+    top: 0px;
+}
+.minorNaviLists{
+    display: inline-table;
+    top: 10px;
+    position : relative;
+    border-radius: 30px;
+    margin: 5px;
+    margin-top: 5px;
+    padding: 8px 10px;
+    background-color: rgba(219,9,9,0.9);
+    box-shadow: 0px 0px 6px 1px rgb(219,9,9);
+    animation: navAnimation 2s ease-in-out;
+    
+    
+}
+
+.minorNaviLists a img{
+    width:40px;
+    display: inline-block;
+    top:50%;
+    transform: translate(0%,0%);
+}
+
+.minorNaviLists ul{
+    display: none;
+    list-style: none;
+}
+.minorNaviLists:hover ul{
+    position: relative;
+    display: inline;
+    
+}
+
+.minorNaviLists ul::after{
+    content: 'ss';
+}
+
+.minorNaviLists ul li a{
+    color: black;
+    text-decoration: none;
+    text-shadow: 1px 1px 40px rgb(44, 5, 5);
+    display: block;
+    max-width: 10em;
+    word-wrap: break-word;
+    white-space: normal;
+    margin-bottom: 0.8em;
+}
+
+
+.minorNaviLists:hover ul::after{
+    content: 'www ';
+    position: fixed;
+    left:50%;
+    padding: 8px 12px;
+    transform: translate(-50%,0);
+    bottom:4%;
+    background-color:  rgb(39, 39, 60);
+    transition: 3s;
+    border-radius: 16em;
+}
+
+.minorNaviLists:first-child:hover ul::after{
+    content : 'Home';
+}
+
+.minorNaviLists:nth-child(2):hover ul::after{
+    content : 'Artikeln';
+}
+
+.minorNaviLists:nth-child(3):hover ul::after{
+    content : 'Teams';
+}
+
+.minorNaviLists:nth-child(4):hover ul::after{
+    content : 'RegelWerk';
+}
+
+.minorNaviLists:nth-child(5):hover ul::after{
+    content : 'Autor';
+}
+
+
+.mainNaviList{
+    margin: 14px;
+    padding: 4px 6px;
+    border-radius: 7px;
+}
+
+.minorNaviLists ul li a:hover {
+    background-color: rgb(138, 10, 10);
+    box-shadow: 0px 0px 20px 3px rgb(138, 10, 10);
+    position: relative;
+    display: inline;
+    border-radius: 40px;
+    padding: 2px 6px;
+    transition: 0.3s;
+    color: black;
+    text-decoration: none;
+    text-shadow: 1px 1px 40px rgb(44, 5, 5);
+    display: block;
+    max-width: 10em;
+    word-wrap: break-word;
+    white-space: normal;
+}
+.minorNaviLists:hover {
+    background-color: rgb(219, 9, 9);
+    box-shadow: 0px 0px 20px 3px rgb(219,9,9);
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 8px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: -5px;
+    transition: 0.3s;
+}
+
+.mainButtons :hover{
+   
+
+}
+
+.minorNaviLists:hover a img{
+    left:50%;
+    right:50%;
+    transform: translate(50%,0%);
+}
+
+
+
+#logoImage{
+    width: 100%;
+    max-width: 1000px;
+
+}
+
+.ka{
+    height: 4000px;
+}
+
+@media screen and (max-device-width: 500px){
+    
+
+    .minorNaviLists{
+        box-shadow:0px 0px 20px 3px  red;
+        border-radius: 70px;
+        padding-top:20px;
+        padding-left:25px;
+        padding-right:25px;
+        padding-bottom:20px;
+        word-wrap: break-word;
+    }
+
+    .minorNaviLists a img{
+        width:80px;
+        
+    }
+
+    .minorNaviLists ul li a{
+        display : block;
+        word-wrap: break-word;
+        white-space: normal;
+        max-width: 10em;
+    }
+
+
+
+    .minorNaviLists:hover a img{
+        left:0%;
+        right:0%;
+        width:80px;
+        transform: translate(25%,0%);
+        margin-top: 30px;
+        margin-Bottom: 20px;
+        background-color: rgb(219,9,9);
+        box-shadow: none;
+
+    }
+    
+    .mainButtons:hover{
+       display: inline;
+    }
+
+    .minorNaviLists:hover li {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        
+
+    }
+    .minorNaviLists:hover {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 70px;
+        transition: 0.3s;
+    }
+
+    .minorNaviLists:hover a{
+        border-radius: 70px;
+        padding: 15px 8px;
+        transition: 0.3s;
+        
+    }
+
+
+
+   
+    @keyframes navAnimation{
+        0%{
+            top: -200px;
+            box-shadow:0px 0px 0px 0px  red;
+            
+        }
+        100%{
+            top: 10px;
+            box-shadow:0px 0px 20px 3px  red;
+        }
+    }
+    
+}

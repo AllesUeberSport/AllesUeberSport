@@ -1,0 +1,398 @@
+body{
+    margin:0;
+    padding:0; 
+    background-color: rgb(21,21,30);
+    font-family:  sans-serif, Arial, Helvetica;
+    color: white;
+}
+
+
+nav{
+    border: 1px red;
+    color: white;
+    text-align: center;
+    position :sticky;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-bottom: 20px;
+    width: 100%;
+    min-width: 300px;
+    z-index: 4;
+    top: -1em;
+}
+
+.image{
+    position: relative;
+    width: 100%;
+    
+    text-align: center;
+}
+
+.image img{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 1.3em;
+}
+
+
+#back{
+    background-color: rgb(21,21,30);;
+    position: fixed;
+    top: 0em;
+    height: 6em ;
+    width: 100%;
+}
+
+
+.mainNaviList{
+    position : relative;
+    display: inline-block;
+    margin: 0;
+    top: 10px;
+    padding: 0;
+    list-style: none;
+    clear: both;
+    
+}
+.minorNaviLists{
+    display: inline-table;
+    top: 10px;
+    position : relative;
+    border-radius: 30px;
+    margin: 5px;
+    margin-top: 5px;
+    padding: 8px 10px;
+    background-color: rgb(219,9,9);
+    box-shadow: 0px 0px 6px 1px rgb(219,9,9);
+}
+
+.minorNaviLists a img{
+    width:40px;
+    display: inline-block;
+    top:50%;
+    transform: translate(0%,0%);
+}
+
+.minorNaviLists ul{
+    display: none;
+    list-style: none;
+
+}
+.minorNaviLists:hover ul{
+    position: relative;
+    display: inline;
+    
+}
+
+.minorNaviLists ul::after{
+    content: 'ss';
+}
+
+
+.minorNaviLists:hover ul::after{
+    content: 'www ';
+    position: fixed;
+    left:50%;
+    padding: 8px 12px;
+    transform: translate(-50%,0);
+    bottom:4%;
+    background-color:  rgb(132, 16, 16);
+    transition: 3s;
+    border-radius: 16em;
+}
+
+.mainNaviList{
+    margin: 14px;
+    padding: 4px 6px;
+    border-radius: 7px;
+}
+
+.minorNaviLists ul li a:hover {
+    background-color: rgb(138, 10, 10);
+    box-shadow: 0px 0px 20px 3px rgb(138, 10, 10);
+    position: relative;
+    display: inline;
+    border-radius: 40px;
+    padding: 2px 6px;
+    
+}
+.minorNaviLists:hover {
+    background-color: rgb(219,9,9);
+    box-shadow: 0px 0px 20px 3px rgb(219,9,9);
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 8px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: -5px;
+}
+
+.mainButtons :hover{
+    background-color: rgb(138, 10, 10);
+    box-shadow: 0px 0px 20px 3px rgb(138, 10, 10);
+    border-radius: 16px;
+    transform: translate(50%,0%);
+}
+
+.minorNaviLists:hover a img{
+    left:50%;
+    right:50%;
+    transform: translate(50%,0%);
+    
+}
+
+aside{
+    position: fixed;
+    left: 1em;
+    z-index: 3;
+    width:14em;
+    background-color: rgb(43, 43, 73);
+    border-radius: 1.6em;
+    top: 7em;
+    box-shadow: 0em 0em 3px 5px rgb(19, 17, 17);
+}
+
+aside li{
+    position: relative;
+    list-style: none;
+    white-space: normal;
+    margin-left: -2.1em;
+    font-size:13px;
+}
+
+aside li a{
+    display: block;
+    border-radius: 1.2em;
+    white-space: normal;
+    word-wrap: break-word;
+    width: 15em;
+    position: relativ;
+    padding: 0.2em;
+    padding-left: 0px;
+    margin: 0.5em 0em;
+    background-color: rgb(71, 71, 101);
+    overflow: hidden;
+    box-shadow: 0em 0em 1em 1px rgb(28, 28, 32);
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
+}
+
+aside li a span{
+    font-size:10px;
+}
+
+aside li img{
+    float: left;
+    height: 3.1em;
+    width: 5em;
+    margin-right: 0.5em;
+    margin-top: -0.5em;
+    margin-bottom: -0.5em;
+}
+
+aside li a:hover{
+    margin-left: 3em;
+    transition: 0.2s;
+}
+
+aside li a:hover nav{
+    background-color:none;
+}
+
+section{
+    position:absolute;
+    left: 15em;
+    margin-left :1em;
+    top: 7em;
+    margin-right: 1em;
+    background-color: rgb(43, 43, 73);
+    padding: 1em;
+    border-radius: 2em;
+    box-shadow: 0em 0em 3px 5px rgb(19, 17, 17);
+    min-width: 600px;
+    width: 950px;
+    width: 65%;
+    text-align: center;
+}
+
+section article{
+    display: inline-block;
+    max-width: 600px;
+    text-align: justify ;
+}
+
+#suggestionSection{
+    display: none;
+    box-shadow: 0em 0em 0.1em 1px black;
+}
+
+@media screen and (max-device-width: 500px){
+    body{
+        font-size: 40px;
+    }
+
+    nav{
+    position: relative;
+    top: 0px;
+    }
+
+    #back{
+        display: none;
+    }
+
+    .minorNaviLists{
+        box-shadow:0px 0px 20px 3px  red;
+        border-radius: 70px;
+        padding-top:20px;
+        padding-left:25px;
+        padding-right:25px;
+        padding-bottom:20px;
+        position: relative;
+    }
+
+    .minorNaviLists a img{
+        width:80px;
+        
+    }
+
+    .image img{
+        width: 100%;
+        max-width: 900px;
+        border-radius: 1em;
+    }
+
+
+    .minorNaviLists:hover a img{
+        left:0%;
+        right:0%;
+        width:80px;
+        transform: translate(25%,0%);
+        margin-top: 30px;
+        margin-Bottom: 20px;
+        background-color: rgb(138, 10, 10);
+        box-shadow: none;
+
+    }
+    .mainButtons:hover{
+        display: none;
+     }
+    .mainButtons:hover{
+       display: inline;
+    }
+
+    .minorNaviLists:hover li {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        
+
+    }
+    .minorNaviLists:hover {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 70px;
+    }
+
+    .minorNaviLists:hover a{
+        border-radius: 70px;
+        padding: 15px 8px;
+        
+    }
+
+    aside{
+        display:none;
+    }
+    section{
+        left: 0px;
+        font-size: 30px;
+    }
+
+    .suggestionbar {
+        font-size: 40px;
+        position: relative;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        white-space: nowrap;
+        display: block;
+    }
+    
+    .suggestionbar a{
+        display: inline-block;
+        width: 10em;
+        height: 11em;
+        margin-right: 0.8em;
+        border-radius: 1.2em;
+        overflow: hidden;
+    }
+
+    .suggestionbar a:last-child{
+        margin-right: none;
+    }
+    .suggestionbar table {
+        position: relative;
+    }
+
+
+    .suggestionbar table tr td a p{
+        background-color: rgb(71, 71, 101);
+        display: inline-block;
+        bottom: 0px;
+        width: 9em;
+        padding: 0.5em;
+        padding-bottom: none;
+        position: absolute;
+        top:4.5em;
+        color: white;
+        box-shadow: 0em 0em 1em 1px rgb(28, 28, 32);
+        white-space: normal;
+        word-wrap: break-word;
+        margin-bottom: -3;
+        border-radius: 0 0 1.2em 1.2em;
+    }
+    .suggestionbar table tr td a p span{
+        background-color: red;
+    }
+    
+    
+    .suggestionbar a img{
+        box-shadow: 0em 0em 1em 1px rgb(28, 28, 32);
+        top:0px;
+        display: inline-block;
+        position: relative;
+        top:0px;
+        width: 10em;
+    }
+    
+    section{
+        position:static;
+        margin:1em;
+        padding: 1em;
+        padding-bottom: 0em;
+        float: none;
+        max-width: none;
+        width: 87.5%;
+        box-shadow: 0em 0em 20px 6px rgb(19, 17, 17);
+        text-align: left;
+    }
+
+    section h2{
+        font-size: 70px;
+    }
+
+    section article{
+        display: inline-block;
+        max-width: none;
+        text-align: justify ;
+    }
+
+    #suggestionSection{
+        display: block;
+        padding: none;
+        padding-bottom: -2em;
+    }
+    
+}

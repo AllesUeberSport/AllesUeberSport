@@ -1,0 +1,432 @@
+body{
+    margin:0;
+    padding:0; 
+    background-color: rgb(21,21,30);
+    font-family:  sans-serif, Arial, Helvetica;
+    color: white;
+}
+
+
+
+.slideBar{
+    list-style: none;
+    background-color: rgb(27, 27, 42);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: block;
+    position: relative;
+    border-radius: 2em;
+    white-space: nowrap;
+    top :0px;
+    padding: 0px;
+    margin: 0px 0.5em;
+    box-shadow: 0px 0px 100px 2px black;
+}
+
+
+.slideBarSections li{
+    display: inline-block;
+    position: relative;
+    left:-1.5em;
+    border-radius: 1.5em;
+    padding: 2px;
+    margin-bottom: 1em;
+    margin: 2px;
+    background-color: red;
+    box-shadow: 0px 0px 100px 2px black;
+}
+
+.slideBar li:nth-child(1){
+    background-color: rgb(40, 42, 44);
+}
+
+.slideBar li:nth-child(2){
+    background-color: red;
+    padding: 2px 7px;
+}
+
+.slideBar li:nth-child(5){
+    background-color: rgb(14, 25, 41);
+}
+
+.slideBar li:nth-child(4){
+    background-color: white;
+}
+
+.slideBar li:nth-child(3){
+    background-color: rgb(244, 175, 62);
+}
+
+.slideBar li:nth-child(6){
+    background-color: white;
+}
+
+.slideBar li:nth-child(7){
+    background-color: white;
+}
+
+.slideBar li:nth-child(8){
+    background-color: rgb(145, 46, 67);
+}
+
+.slideBar li:nth-child(9){
+    background-color: rgb(249, 118, 24);
+}
+
+.slideBar li:nth-child(10){
+    background-color: rgb(98, 0, 255);
+    padding: 2px 8p;
+    margin-right: 0px;
+
+}
+
+.slideBar li a img{
+    display: inline-block;
+    vertical-align: middle;
+    height: 5em;
+    border-radius: 1em;
+}
+
+.teamSection div{
+    
+    margin: 0.5em;
+    border-radius: 3em;
+    padding: 0.3em;
+    min-width: 740px;
+    box-shadow: 0px 0px 20px 4px black;
+}
+
+.teamSection div section{
+    position: relative;
+    display: block;
+    text-align: left;
+    margin: 2px;
+    margin-left: 8px;
+    border-radius: 2.5em;
+    overflow-x: hidden;
+    overflow-y: none;
+    margin: 1em 0.7em ;
+    min-width: 700px;
+    box-shadow: 0px 0px 100px 1px rgba(0, 0, 0, 0.5);
+    
+}
+
+.teamSection div h3{
+    position: static;
+    display: block;
+    text-align: center;
+    margin: 2px;
+    margin-left: 8px;
+}
+
+.teamSection div section p{
+    top: 50%;
+    transform: translateY(-75%);
+    position: absolute;
+    display: inline-block;
+    clear: none;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.teamSection div section p ul li{
+    padding-left: 20px;
+}
+
+.teamSection div section img{
+    position: relative;
+    display: inline-flexbox;
+    width:30%;
+    top:0px;
+    left: 0px;
+    margin-right: 3em;
+    min-height: 100%;
+    min-width: 30%;
+    float: left;
+    border-radius: 1.5em;
+    box-shadow: 0px -25px 40px 2px black;
+
+}
+
+.teamSection div:nth-child(1){
+    background-color: rgb(40, 42, 44);
+}
+
+.teamSection div:nth-child(1) section{
+    background-color: rgb(68, 76, 83);
+}
+
+.teamSection div:nth-child(2){
+    background-color: rgb(3, 2, 2);
+}
+
+.teamSection div:nth-child(2) section{
+
+    background-color: rgb(207, 13, 13); ;
+}
+
+.teamSection div:nth-child(2) section p{
+
+    background-color: rgb(207, 13, 13); ;
+}
+
+.teamSection div:nth-child(3){
+    background-color: rgb(243, 219, 36);
+    color:black;
+}
+
+.teamSection div:nth-child(3) section{
+
+    background-color: rgb(14, 21, 45);
+    color:white;
+}
+
+.teamSection div:nth-child(3) section p{
+
+    background-color: rgb(14, 21, 45);
+    color:white;
+}
+
+.teamSection div:nth-child(4){
+    background-color: white;
+    color:black;
+}
+
+.teamSection div:nth-child(4) section{
+
+    background-color: rgb(252, 244,92);
+    color:black;
+}
+
+.teamSection div:nth-child(4) section p{
+
+    background-color: rgb(252, 244,92);
+    color:black;
+}
+
+.teamSection div:nth-child(5){
+    background-color: rgb(14,25,41);
+    color:white;
+}
+
+.teamSection div:nth-child(5) section{
+
+    background-color: rgb(179,52,54);
+    color:white;
+}
+
+.teamSection div:nth-child(5) section p{
+
+    background-color: rgb(179,52,54);
+    color:white;
+}
+
+.teamSection div:nth-child(6){
+    background-color: red;
+    color:white;
+}
+
+.teamSection div:nth-child(6) section{
+
+    background-color: white;
+    color:black;
+}
+
+.teamSection div:nth-child(6) section p{
+
+    background-color: white;
+    color:black;
+}
+
+.teamSection div:nth-child(7){
+    background-color:  rgb(255,133,181);
+    color:white;
+}
+
+.teamSection div:nth-child(7) section{
+
+    background-color: rgb(58,47,214);
+    color:black;
+}
+
+.teamSection div:nth-child(7) section p{
+
+    background-color: rgb(58,47,214);
+    color:black;
+}
+
+.teamSection div:nth-child(8){
+    background-color:  rgb(109,32,36);
+    color:white;
+}
+
+.teamSection div:nth-child(8) section{
+
+    background-color: white;
+    color:black;
+}
+
+.teamSection div:nth-child(8) section p{
+
+    background-color: white;
+    color:black;
+}
+
+.teamSection div:nth-child(9){
+    background-color: rgb(19,19,21);
+    color:white;
+}
+
+.teamSection div:nth-child(9) section{
+
+    background-color: rgb(179,45,45);
+    color:black;
+}
+
+.teamSection div:nth-child(9) section p{
+
+    background-color: rgb(179,45,45);
+    color:black;
+}
+
+.teamSection div:nth-child(10){
+    background-color: rgb(124,210,240);
+    color:white;
+}
+
+.teamSection div:nth-child(10) section{
+
+    background-color: white;
+    color:black;
+}
+
+.teamSection div:nth-child(10) section p{
+
+    background-color: white;
+    color:black;
+}
+
+ol{
+    display: inline;
+    list-style: circle;
+    list-style-type: circle;
+}
+
+.teamlist{
+    display: inline-block;
+    margin-left: -50px;
+}
+
+
+@media screen and (max-device-width: 500px){
+    body{
+        font-size: 40px;
+    }
+
+    .teamSection div section {
+        font-size: 40px;
+        border-radius: 2em;
+        position: relative;
+        padding-left: 1em;
+        padding-bottom:-0,9em ;
+    }
+
+    .teamlist{
+        font-size: 40spx;
+        display: inline-block;
+        margin-left: 0px;
+    }
+
+    
+
+    .teamSection div section img{
+        margin-left: -1em;
+        float: none;
+        width: 105%;
+        display: block;
+        margin-bottom: -10%;
+        border-radius: 1.5em 1.5em 0em 0em;
+    }
+
+    .teamSection div section p {
+        margin-left: -1em;
+        display: block;
+        font-size: 45spx;
+        border-radius: 50px 50px 0px 0px;
+        
+        position: relative;
+        transform: translateY(0%);
+        background-color: rgb(68, 76, 83);
+        padding: 1em;
+        
+    }
+
+
+    .teamSection div section p ul {
+        list-style: circle;
+        list-style-type: circle;
+
+        background-color: sienna;
+    }
+
+
+    .minorNaviLists{
+        box-shadow:0px 0px 20px 3px  red;
+        border-radius: 70px;
+        padding-top:20px;
+        padding-left:25px;
+        padding-right:25px;
+        padding-bottom:20px;
+    }
+
+    .minorNaviLists a img{
+        width:80px;
+        
+    }
+
+
+
+    .minorNaviLists:hover a img{
+        left:0%;
+        right:0%;
+        width:80px;
+        transform: translate(25%,0%);
+        margin-top: 30px;
+        margin-Bottom: 20px;
+        background-color: rgb(219,9,9);
+        box-shadow: none;
+
+    }
+    .mainButtons:hover{
+        display: none;
+     }
+    .mainButtons:hover{
+       display: inline;
+    }
+
+    .minorNaviLists:hover li {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        
+
+    }
+    .minorNaviLists:hover {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 70px;
+    }
+
+    .minorNaviLists:hover a{
+        border-radius: 70px;
+        padding: 15px 8px;
+        
+    }
+
+    .slideBar li{
+        left: 0.1em;
+    }
+    
+}

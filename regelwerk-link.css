@@ -1,0 +1,177 @@
+body{
+    background-color: rgb(21,21,30);;
+    font-family:  sans-serif, Arial, Helvetica;
+}
+
+#cardsContainer{
+    display:block;
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    padding-top: 0em;
+    background:rgb(43, 43, 73);
+    z-index: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 2em;
+    margin-top:  4em;
+    width: 100%;
+    padding-bottom: -1em;
+    box-sizing: content-box ;
+}
+
+#cardsContainer h1{
+    position: absolute;
+    left: 0.8em;
+}
+
+#cardsContainer ul {
+    list-style-type: none;
+    white-space: nowrap;
+    overflow-x: scroll;
+    z-index: 0;
+    padding-top: 3em;
+
+
+    
+}
+#card {
+    display: inline-block;
+    background-color: rgb(71, 71, 101);
+    width: 16em;
+    height: 25em;
+    word-wrap: break-word;
+    -webkit-word-wrap: break-word;
+    white-space: normal;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    padding:0.5em;
+    border-radius: 1.5em;
+    box-shadow: 0px 0px 20px 5px rgb(26, 25, 25);
+    margin-left: -6em;
+    z-index: 1;
+    transition: 0.3s;
+    padding-left: -2em;
+    position: relative;
+}
+
+#card :first-child{
+    margin-left: -1em;
+}
+#card :first-child img{
+    margin-left: -1em;
+}
+
+#card :last-child{
+    margin-right: 1.5em;
+}
+
+#cardsContainer ul li:first-child{
+    margin-left: -1em;
+}
+
+
+
+#card section {
+    margin-right: 0px;
+    position: relative;
+    top :-3em;
+    transition: 0.3s;
+}
+
+#cardsContainer ul :hover{
+    transform: translate(0em,-4em);
+    background-color: rgb(98, 98, 132);
+    transition: 0.3s;
+    z-index: 1;
+    
+}
+
+#cardsContainer ul :hover section{
+    transform: translate(0em,0em);
+    transition: 0.3s;
+    top:0em;
+}
+
+#cardsContainer ul li img{
+    margin-top: -1em;
+    margin-left: 3em;
+    transition: 0.3s;
+    height: 10em;
+    width: 110%;
+}
+
+#cardsContainer ul li h3{
+    position: relative;
+    left:1em;
+    top:-1em;
+    color: ivory;
+    transition: 0.3s;
+    text-shadow: 1px 1px 2px  black;
+}
+
+#cardsContainer ul :hover  h3{
+    transform: translate(0em,0em);
+    top:0em;
+    transition: 0.3s;
+    text-shadow: none;
+}
+#cardsContainer ul :hover img{
+    transform: translate(0em,0em);
+    margin-top: -2em;
+    transition: 0.3s;
+}
+
+#card:hover ~ #card{ 
+transform: translate(7em,0em);
+transition: 0.3s;
+}
+
+@media screen and (max-device-width: 500px){
+    body{
+        font-size: 40px;
+    }
+
+    #cardsContainer{
+        width: 96%;
+    }
+
+    #card {
+        width: 18em;
+        height: 30em;
+        text-align: justify;
+        margin-left: -10em;
+    }
+
+
+    #cardsContainer ul li img{
+        margin-top: -1em;
+        transition: 0.3s;
+        height: 40%;
+        transition: 0.3s;
+    }
+    #cardsContainer ul section{
+        width: 15em;
+        padding: 0.5em;
+        font-size: 45px;
+        margin-top: 0em;
+        background-color: none;
+        transition: 0.3s;
+
+    }
+    #cardsContainer{
+        padding-left: -3.5em;
+        margin-left: 0.3em;
+    }
+
+    #card:hover ~ #card{ 
+        transform: translate(11em,0em);
+        transition: 0.3s;
+        }
+
+    #cardsContainer ul li:first-child{
+        margin-left: 0em;
+    }
+}
